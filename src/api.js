@@ -14,7 +14,7 @@ const router = express.Router();
 // Define a route that makes a call to the GitHub API and responds with the top 15 users by followers
 router.get("/", async (req, res) => {
   try {
-    const githubToken = process.env.TOKEN1; // Get the GitHub token from environment variables
+    const githubToken = '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'; // Get the GitHub token from environment variables
     if (!githubToken) {
       throw new Error("GitHub token not found in environment variables.");
     }
